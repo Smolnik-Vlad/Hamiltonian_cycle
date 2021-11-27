@@ -14,7 +14,7 @@ bool cycle_find(int **matrix, int x, int y, int step, vector<int> way, int verte
 		result = way;
 		result.push_back(way[0]);
 		for (int i = 0; i < y; i++) {
-			if (matrix[i][way[0]] == 1 && matrix[i][vertex] == 1) 
+			if (matrix[i][way[0]] != 0 && matrix[i][vertex] != 0) 
 				{
 
 					return true;
